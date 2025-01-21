@@ -14,7 +14,7 @@ class UserResponse(BaseModel):
     country_id: Optional[int]
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class UserLogin(BaseModel):
     email: str
